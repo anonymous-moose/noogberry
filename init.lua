@@ -31,15 +31,15 @@ if mg_name ~= "v6" and mg_name ~= "singlenode" then
 		if i == 1 then
 			name = "noogberry:orange_noogberry_plant"
 			schematic = "noogberry_orange_1"
-			offset = 0.008
-			scale = 0.0004
+			offset = -0.004
+			scale = 0.01
 			seed = 67
 			place_offset_y = 1
 		else
 			name = "noogberry:pink_noogberry_plant"
 			schematic = "noogberry_pink_1"
-			offset = 0.005
-			scale = 0.0003
+			offset = -0.004
+			scale = 0.01
 			seed = 23
 			place_offset_y = 1
 		end
@@ -51,12 +51,12 @@ if mg_name ~= "v6" and mg_name ~= "singlenode" then
 			noise_params = {
 				offset = offset,
 				scale = scale,
-				spread = {x = 250, y = 250, z = 250},
+				spread = {x = 100, y = 100, z = 100},
 				seed = seed,
 				octaves = 3,
-				persist = 0.66
+				persist = 0.7
 			},
-			biomes = {biomes},
+			-- biomes = {biomes},
 			y_min = 1,
 			y_max = 80,
 			schematic = modpath .. "/schematics/" .. schematic .. ".mts",
